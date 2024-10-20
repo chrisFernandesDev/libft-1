@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int    ft_isalnum(char c)
+int ft_isalnum(char c)
 {
     if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
     {
