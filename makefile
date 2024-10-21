@@ -1,9 +1,10 @@
-NAME	= libft.a
+NAME = libft.a
 
 CC	= cc
 CFLANGS	= -Wall -Wextra -Werror
 
-OBJ	= ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memset.o ft_strlen.o
+SRC	= $(addprefix $(SRC_PATH)/, ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memset.c ft_strlen.c, ft_memmove.c, 
+OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 

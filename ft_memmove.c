@@ -1,10 +1,22 @@
-// #include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/21 14:50:53 by tiagalex          #+#    #+#             */
+/*   Updated: 2024/10/21 14:51:34 by tiagalex         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    *ft_memmove(void *dest, const void *src, size_t len)
+#include <stdio.h>
+
+void	*ft_memmove(void *dest, const void *src, size_t len)
 {
-    char *c_src;
-    char *c_dest;
-    size_t i;
+    char	*c_src;
+    char	*c_dest;
+    size_t	i;
 
     c_dest = (char *)dest;
     c_src = (char *)src;
@@ -25,7 +37,6 @@ void    *ft_memmove(void *dest, const void *src, size_t len)
         }
     }
     return (dest);
-    
 }
 /*
 int main(void)

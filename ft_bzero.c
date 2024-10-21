@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/21 14:41:50 by tiagalex          #+#    #+#             */
+/*   Updated: 2024/10/21 14:41:50 by tiagalex         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
 //estou a passar o void mas posso passar o ptr.
-void    *ft_bzero(void *str, size_t n)
+void	*ft_bzero(void *str, size_t n)
 {
-    unsigned char   *ptr;
-    size_t  i;
+    unsigned char	*ptr;
+    size_t	i;
 
     ptr = str;
     i = 0;
@@ -15,6 +27,7 @@ void    *ft_bzero(void *str, size_t n)
     }
     return (str); 
 }
+/* 
 int main()
 {
     char buffer[50];
@@ -24,4 +37,4 @@ int main()
     printf("buffer after ft_fzero: %s\n", buffer);
 
     return (0);
-}
+} */

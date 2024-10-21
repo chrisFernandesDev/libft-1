@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/21 14:51:58 by tiagalex          #+#    #+#             */
+/*   Updated: 2024/10/21 14:51:58 by tiagalex         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
 //estou a passar o void mas posso passar o ptr.
-void    *ft_memset(void *str, int value, size_t n)
+void	*ft_memset(void *str, int value, size_t n)
 {
-    unsigned char   *ptr;
-    size_t  i;
+    unsigned char	*ptr;
+    size_t 	i;
 
     ptr = str;
     i = 0;
