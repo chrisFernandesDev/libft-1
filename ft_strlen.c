@@ -11,6 +11,7 @@ int ft_strlen(char *str)
      }
      return(i);
 }
+/*
 int main(int argc, char **argv)
 {
     (void)argc;
@@ -18,3 +19,4 @@ int main(int argc, char **argv)
     printf ("%d\n", ft_strlen(argv[1]));
     return 0;
 }
+*/
