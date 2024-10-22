@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-// algo
+// descobre se 'e digito.
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

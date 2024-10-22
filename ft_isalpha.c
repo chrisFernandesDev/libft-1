@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalpha(char c)
 {
@@ -22,7 +22,7 @@ int	ft_isalpha(char c)
     else
         return (0);
 }
-/*
+/* 
 int main(int argc, char **argv)
 {
     (void)argc;
@@ -37,4 +37,4 @@ int main(int argc, char **argv)
     }
     return(0);
 }
-*/
+ */

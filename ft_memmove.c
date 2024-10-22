@@ -6,11 +6,11 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:50:53 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/21 14:51:34 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/22 14:11:27 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {

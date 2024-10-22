@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 //estou a passar o void mas posso passar o ptr.
 void	*ft_memset(void *str, int value, size_t n)
