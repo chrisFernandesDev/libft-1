@@ -27,7 +27,7 @@ void	*ft_memset(void *str, int value, size_t n)
 	}
 	return (str);
 }
-/* 
+
 int main()
 {
     char buffer[50];
@@ -37,4 +37,4 @@ int main()
     printf("buffer after ft_menset: %s\n", buffer);
 
     return (0);
-} */
+}
