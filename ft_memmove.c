@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:50:53 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/22 14:11:27 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/22 14:32:03 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,29 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
-    char	*c_src;
-    char	*c_dest;
-    size_t	i;
+	char	*c_src;
+	char	*c_dest;
+	size_t	i;
 
-    c_dest = (char *)dest;
-    c_src = (char *)src;
-    i = 0;
-    if (c_dest > c_src)
-    {
-        while (len-- > 0)
-        {
-            c_dest[len] = c_src[len];
-        }
-    }
-    else
-    {
-        while (i < len)
-        {
-            c_dest[i] = c_src[i];
-            i++;
-        }
-    }
-    return (dest);
+	c_dest = (char *)dest;
+	c_src = (char *)src;
+	i = 0;
+	if (c_dest > c_src)
+	{
+		while (len-- > 0)
+		{
+			c_dest[len] = c_src[len];
+		}
+	}
+	else
+	{
+		while (i < len)
+		{
+			c_dest[i] = c_src[i];
+			i++;
+		}
+	}
+	return (dest);
 }
 /*
 int main(void)

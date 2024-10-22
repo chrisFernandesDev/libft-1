@@ -15,18 +15,19 @@
 //estou a passar o void mas posso passar o ptr.
 void	*ft_memset(void *str, int value, size_t n)
 {
-    unsigned char	*ptr;
-    size_t 	i;
+	unsigned char	*ptr;
+	size_t			i;
 
-    ptr = str;
-    i = 0;
-    while (i < n)
-    {
-        ptr[i] = value;
-        i++;
-    }
-    return (str);
+	ptr = str;
+	i = 0;
+	while (i < n)
+	{
+		ptr[i] = value;
+		i++;
+	}
+	return (str);
 }
+/* 
 int main()
 {
     char buffer[50];
@@ -36,4 +37,4 @@ int main()
     printf("buffer after ft_menset: %s\n", buffer);
 
     return (0);
-}
+} */
