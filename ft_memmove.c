@@ -6,12 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:50:53 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/22 14:32:03 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/23 15:25:02 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	char	*c_src;
@@ -23,8 +24,9 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	i = 0;
 	if (c_dest > c_src)
 	{
-		while (len-- > 0)
+		while (len > 0)
 		{
+			len--;
 			c_dest[len] = c_src[len];
 		}
 	}

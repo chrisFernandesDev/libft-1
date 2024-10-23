@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:34:46 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/23 13:05:34 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/23 14:38:12 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,19 +24,18 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dest_size)
 	dest_len = ft_strlen(dest);
 	if (dest_size == 0)
 		return (src_len + dest_len);
-	
 	i = 0;
 	j = dest_len;
-	while ( src[i] != '\0' && dest_len < (dest_size - 1))
+	while (src[i] != '\0' && dest_len < (dest_size - 1))
 	{
-		dest[dest_len] = src[i];
+		dest[j] = src[i];
 		i++;
 		j++;
 	}
 	dest[dest_len] = '\0';
 	return (src_len + dest_len);
 }
-
+/* 
 int	main()
 {
 	char dest[] = "alguma ";
@@ -46,4 +45,4 @@ int	main()
 
 	printf ("%zu\n", len);
 	printf ("%s\n", dest);
-}
+} */
