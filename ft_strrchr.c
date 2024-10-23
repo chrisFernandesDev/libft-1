@@ -1,35 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 15:42:39 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/23 18:13:34 by tiagalex         ###   ########.fr       */
+/*   Created: 2024/10/23 17:23:28 by tiagalex          #+#    #+#             */
+/*   Updated: 2024/10/23 18:27:32 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// a funcao procura na string o char queres e recebes o pointer do resto
-char	*ft_strchr(const char *str, int c)
+//funcao que procura na string a ultima vez que encontra o character retorna o pointer do resto
+char	*ft_strrchr(const char *str, int c)
 {
+	char *last_c;
+
+	last_c = NULL;
 	while (*str)
 	{
 		if (*str == (char)c)
-			return ((char *)str);
+			last_c = (char *)str;
 		str++;
 	}
 	if (c == '\0')
 		return ((char *)str);
-	return (NULL);
+	return (last_c);
 }
-/* 
 int	main()
 {
-	char	*str = "Alguma coisa";
+	char	*str = "Alguma coisa qualquer caixa ou cao";
 	int	c = 'c';
-	printf ("%s", ft_strchr(str, c));
+	printf ("%s", ft_strrchr(str, c));
 	return (0);
-}*/
+}
