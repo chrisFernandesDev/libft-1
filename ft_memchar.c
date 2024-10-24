@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 17:23:28 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/24 13:20:59 by tiagalex         ###   ########.fr       */
+/*   Created: 2024/10/24 11:43:35 by tiagalex          #+#    #+#             */
+/*   Updated: 2024/10/24 14:37:17 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//funcao que procura na string a ultima vez que encontra o character retorna o pointer do resto
-char	*ft_strrchr(const char *str, int c)
-{
-	char *last_c;
 
-	last_c = NULL;
-	while (*str)
-	{
-		if (*str == (char)c)
-			last_c = (char *)str;
-		str++;
-	}
-	if (c == '\0')
-		return ((char *)str);
-	return (last_c);
-}
-/* 
-int	main()
+void	*ft_memchar(const void *s, int c, size_t n)
 {
-	char	*str = "Alguma coisa qualquer caixa ou cao";
-	int	c = 'c';
-	printf ("%s", ft_strrchr(str, c));
+	const unsigned char	*str;
+	size_t	i;
+	
+	i = 0;
+	str = (const unsigned char *)s; 
+	while (i < n)
+	{
+		if (str[i] == (unsigned char)c)
+			return ((void *)(str + i));
+		i++;
+	}
+	return (NULL);
+}
+
+int	main ()
+{
+	char	*str = "alguma coisa";
+	char	c = 'c';
+	size_t	n = sizeof(str);
+
+	void	result = ft_memchar(str, c, n) 
+	printf ("%s", result);
 	return (0);
-} */
+}

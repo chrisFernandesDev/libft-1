@@ -1,37 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 17:23:28 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/24 13:20:59 by tiagalex         ###   ########.fr       */
+/*   Created: 2024/10/24 10:52:46 by tiagalex          #+#    #+#             */
+/*   Updated: 2024/10/24 11:36:01 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//funcao que procura na string a ultima vez que encontra o character retorna o pointer do resto
-char	*ft_strrchr(const char *str, int c)
-{
-	char *last_c;
 
-	last_c = NULL;
-	while (*str)
+//compara com entre 2 strings
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	while ((i < n) && (s1[i] == s2[i]) && (s1[i] != '\0') && (s2[i] != '\0'))
 	{
-		if (*str == (char)c)
-			last_c = (char *)str;
-		str++;
+		i++;
 	}
-	if (c == '\0')
-		return ((char *)str);
-	return (last_c);
+	if (i == n)
+		return (0);
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 /* 
 int	main()
 {
-	char	*str = "Alguma coisa qualquer caixa ou cao";
-	int	c = 'c';
-	printf ("%s", ft_strrchr(str, c));
+	char	*s1 = "bbbbbb";
+	char	*s2 = "bbabbb";
+	size_t	n = 2;
+	int result = ft_strncmp(s1, s2, n);
+
+	printf ("%d", result);
 	return (0);
 } */
