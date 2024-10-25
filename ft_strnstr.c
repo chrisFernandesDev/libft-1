@@ -6,25 +6,44 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:32:01 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/25 14:43:46 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/25 15:48:26 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 //procura a agulha dentro do palheiro ate um certo limite
-char	*strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	int	i;
+	int	j;
 
 	i = 0;
-	while (str[i] != '\0' &&  i < len)
+	j = 0;
+	if (needle[0] == '\0')
+		return ((char *)haystack);
+	while (haystack[i] != '\0' &&  i < len)
 	{
-		if (str[i] == needle)
+		if (haystack[i] == needle[0])
 		{
-			/* code */
+			j = 0;
+			while ((haystack[i + j] == needle[j]) && (i + j) < len && (needle[j] != '\0'))
+				j++;
+			if (needle[j] == '\0')
+				return ((char *)&haystack[i]);
 		}
-		
+		i++;
 	}
-	
+	return (NULL);
+}
+
+int main()
+{
+	char	*haystack = "Alguma coisas e outra cenas";
+	char	*needle = "coisa e";
+	size_t	len = 13;
+	char	*result = ft_strnstr(haystack, needle, len);
+
+	printf ("%s", result);
+	return (0);
 }
