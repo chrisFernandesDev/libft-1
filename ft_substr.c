@@ -1,43 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/25 13:50:39 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/29 17:40:26 by tiagalex         ###   ########.fr       */
+/*   Created: 2024/10/29 17:49:50 by tiagalex          #+#    #+#             */
+/*   Updated: 2024/10/29 19:41:10 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//compara 2 strings de bytes
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	unsigned char	*c_s1;
-	unsigned char	*c_s2;
 	size_t	i;
+	char	*sub;
+	int	s_len;
 
-	c_s1 = (unsigned char *)s1;
-	c_s2 = (unsigned char *)s2;
 	i = 0;
-	while ((i < n) && (c_s1[i] == c_s2[i]) && (c_s1[i] != '\0') && (c_s2[i] != '\0'))
+	s_len = ft_strlen(s);
+	sub = (char*)malloc((s_len + 1) * sizeof(char));
+	if (!sub)
+		return (NULL);
+	if ((s_len < start) && (s_len < len))
+		return (NULL);
+	while ((sub[i] <= len) || (s[start] != '\0'))
 	{
+		sub[i] = s[start + i];
 		i++;
 	}
-	if (i == n)
-		return (0);
-	return(c_s1[i] - c_s2[i]);
+	sub[i] = '\0';
+	return (sub);
 }
-/* 
+
 int	main()
 {
-	char	*s1 = "bbabbb";
-	char	*s2 = "bbbbbb";
-	size_t	n = 0;
-	int	result = ft_memcmp(s1, s2, n);
+	char	*s = "alguma coisa";
+	int	start = 7;
+	size_t	len = 3;
+	char	*sub = ft_substr(s, start, len);
 
-	printf ("%d", result);
+	printf ("%s\n", sub);
 	return (0);
-} */
+}

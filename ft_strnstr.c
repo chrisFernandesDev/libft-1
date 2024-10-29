@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:32:01 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/25 15:48:26 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/29 17:42:50 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
+/* 
 int main()
 {
 	char	*haystack = "Alguma coisas e outra cenas";
@@ -46,4 +46,4 @@ int main()
 
 	printf ("%s", result);
 	return (0);
-}
+} */

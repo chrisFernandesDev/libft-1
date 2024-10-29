@@ -6,11 +6,12 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 17:23:28 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/24 13:20:59 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/29 17:43:31 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 //funcao que procura na string a ultima vez que encontra o character retorna o pointer do resto
 char	*ft_strrchr(const char *str, int c)
 {

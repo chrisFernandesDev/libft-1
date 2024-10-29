@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:56:55 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/25 16:11:41 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/29 17:40:28 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,10 @@ int	ft_atoi(char *str)
 	}
 	return (r * signal);
 }
+/* 
 int	main(int argc, char **argv)
 {
 	(void)argc;
 
 	printf("%d\n", ft_atoi(argv[1]));
-}
+} */
