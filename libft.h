@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 12:18:50 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/24 11:42:39 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/29 13:37:02 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 
 //Funcions
@@ -26,7 +27,7 @@ int	ft_isalnum(char c);
 int	ft_isalpha(char c);
 int	ft_isascii(int  c);
 int	ft_isprint(int  c);
-int	ft_strlen(char *str);
+size_t	ft_strlen(const char *str);
 void	*ft_bzero(void *str, size_t n);
 char	*ft_strchr(const char *str, int c);
 void	*ft_memset(void *str, int value, size_t n);
