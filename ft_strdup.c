@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 12:25:43 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/29 13:38:44 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/30 11:50:18 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strdup(const char *str)
 	size_t	i;
 
 	i = 0;
-	cpy = (char*)malloc((ft_strlen(str) + 1) * sizeof(char));
+	cpy = (char *)malloc ((ft_strlen(str) + 1) * sizeof(char));
 	if (!cpy)
 		return (NULL);
 	while (str[i] != '\0')
@@ -29,7 +29,7 @@ char	*ft_strdup(const char *str)
 	cpy[i] = '\0';
 	return (cpy);
 }
-
+/* 
 int	main()
 {
 	char	*str = "alguma coisa.";
@@ -37,4 +37,4 @@ int	main()
 
 	printf ("%s", cpy);
 	free (cpy);
-}
+} */

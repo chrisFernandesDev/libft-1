@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:04:33 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/22 16:18:49 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/30 13:53:10 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,11 @@
 size_t	ft_strlcpy(char *dest, const char *src, size_t dest_size)
 {
 	size_t	src_len;
-	int		i;
+	size_t	i;
 
 	src_len = ft_strlen((char *)src);
-
 	if (dest_size == 0)
 		return (src_len);
-
 	i = 0;
 	while (i < (dest_size - 1) && src[i] != '\0')
 	{
@@ -30,9 +28,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dest_size)
 		i++;
 	}
 	dest[i] = '\0';
-
 	return (src_len);
-	
 }
 /* 
 int	main()

@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:49:50 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/29 19:41:10 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/30 12:18:13 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,16 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	char	*sub;
-	int	s_len;
+	int		s_len;
 
 	i = 0;
 	s_len = ft_strlen(s);
-	sub = (char*)malloc((s_len + 1) * sizeof(char));
+	sub = (char *)malloc((len + 1) * sizeof(char));
 	if (!sub)
 		return (NULL);
-	if ((s_len < start) && (s_len < len))
+	if ((s_len <= start) && (s_len < len))
 		return (NULL);
-	while ((sub[i] <= len) || (s[start] != '\0'))
+	while ((i < len) && (s[start + i] != '\0'))
 	{
 		sub[i] = s[start + i];
 		i++;
@@ -33,7 +33,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
-
+/* 
 int	main()
 {
 	char	*s = "alguma coisa";
@@ -43,4 +43,4 @@ int	main()
 
 	printf ("%s\n", sub);
 	return (0);
-}
+} */

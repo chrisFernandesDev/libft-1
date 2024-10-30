@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 17:53:22 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/29 17:40:31 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/30 11:48:07 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*calloc(size_t count, size_t size)
 {
 	void	*temp;
-	
+
 	temp = malloc(count * size);
 	if (!temp)
 		return (NULL);
