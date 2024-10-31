@@ -6,13 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:50:53 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/23 15:25:02 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/31 11:26:58 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//
+//move 1 str bloco de memoria para outra str
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	char	*c_src;
