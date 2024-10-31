@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 12:18:50 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/31 15:13:52 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/31 17:44:49 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,9 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t len);
 void	*ft_memmove(void *dest, const void *src, size_t len);
 void	*ft_memset(void *str, int value, size_t n);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putstr_fd(char *s, int fd);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strdup(const char *str);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));

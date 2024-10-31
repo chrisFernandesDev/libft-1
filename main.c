@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 15:27:22 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/31 16:32:33 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/31 17:43:43 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,41 @@ int main()
     return (0);
 } 
  */
+/* 
+// main for ft_putchar_fd.c
+int	main()
+{
+	char	c = 'c';
+	int		fd = 1;
+
+	ft_putchar_fd(c, fd);
+	return (0);
+}
+ */
+
+/*
+//main for ft_putstr_fd.c
+int	main()
+{
+	char	*s = "ela disse que nao tinha personalidade juridica!";
+	int		fd = 1;
+
+	ft_putstr_fd(s, fd);
+	return (0);
+}
+ */
+
+/* 
+//main for ft_putendl_fd.c
+int	main()
+{
+	char	*s = "ela disse que nao tinha personalidade juridica!";
+	int		fd = 1;
+
+	ft_putendl_fd(s, fd);
+	return (0);
+}
+*/
 
 /*
 //main for ft_striteri.c 
