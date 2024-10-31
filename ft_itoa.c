@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:48:23 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/31 12:28:10 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/10/31 15:27:07 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,17 @@ int	ft_intlen(const int nb)
 		i++;
 	}
 	if (n == 0)
-		return(1);
+		return (1);
 	while (n > 0)
 	{
 		n = n / 10;
 		i++;
 	}
-	return(i);
+	return (i);
 }
+
 //Converte int para *str.
-char	*ft_itoa(int	n)
+char	*ft_itoa(int n)
 {
 	size_t	len;
 	char	*str;
@@ -57,7 +58,7 @@ char	*ft_itoa(int	n)
 	while (nb > 0)
 	{
 		str[--len] = (nb % 10) + '0';
-		nb = nb /10;
+		nb = nb / 10;
 	}
 	return (str);
 }

@@ -1,46 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 17:49:50 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/31 14:25:10 by tiagalex         ###   ########.fr       */
+/*   Created: 2024/10/31 15:13:08 by tiagalex          #+#    #+#             */
+/*   Updated: 2024/10/31 16:32:57 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/* 
+void	upper(unsigned int i, char *c)
+{
+	(void)i;
+	if (*c >= 'a' && *c <= 'z')
+	{
+		*c = *c - 32;
+	}
+}
+ */
 
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+//Modifica a string original aplicando uma função a cada caractere.
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	size_t	i;
-	char	*sub;
-	size_t	s_len;
 
 	i = 0;
-	s_len = ft_strlen(s);
-	sub = (char *)malloc((len + 1) * sizeof(char));
-	if (!sub)
-		return (NULL);
-	if ((s_len <= start) && (s_len < len))
-		return (NULL);
-	while ((i < len) && (s[start + i] != '\0'))
+	while (s[i] != '\0')
 	{
-		sub[i] = s[start + i];
+		f(i, &s[i]);
 		i++;
 	}
-	sub[i] = '\0';
-	return (sub);
 }
+
 /* 
 int	main()
 {
-	char	*s = "alguma coisa";
-	int	start = 7;
-	size_t	len = 3;
-	char	*sub = ft_substr(s, start, len);
-
-	printf ("%s\n", sub);
+	char	s[] = "ela disse que nao tinha personalidade juridica!";
+	ft_striteri(s, upper);
+	
+	printf ("%s\n", s);
 	return (0);
 } */

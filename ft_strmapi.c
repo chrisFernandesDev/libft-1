@@ -1,46 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 17:49:50 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/31 14:25:10 by tiagalex         ###   ########.fr       */
+/*   Created: 2024/10/31 12:42:12 by tiagalex          #+#    #+#             */
+/*   Updated: 2024/10/31 14:19:35 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+/* 
+char	upper(unsigned int i, char c)
+{
+	(void)i;
+	if (c >= 'a' && c <= 'z')
+	{
+		c = c - 32;
+	}
+	return (c);
+}
+ */
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	size_t	i;
-	char	*sub;
-	size_t	s_len;
+	size_t	len;
+	char	*str;
 
 	i = 0;
-	s_len = ft_strlen(s);
-	sub = (char *)malloc((len + 1) * sizeof(char));
-	if (!sub)
+	len = ft_strlen(s);
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
 		return (NULL);
-	if ((s_len <= start) && (s_len < len))
-		return (NULL);
-	while ((i < len) && (s[start + i] != '\0'))
+	while (i < len)
 	{
-		sub[i] = s[start + i];
+		str[i] = (*f)(i, s[i]);
 		i++;
 	}
-	sub[i] = '\0';
-	return (sub);
+	str[i] = '\0';
+	return (str);
 }
 /* 
 int	main()
 {
-	char	*s = "alguma coisa";
-	int	start = 7;
-	size_t	len = 3;
-	char	*sub = ft_substr(s, start, len);
+	char	*s = "Alguma Coisa1";
+	char	*f = ft_strmapi(s, *upper);
 
-	printf ("%s\n", sub);
+	printf("%s\n", f);
 	return (0);
 } */
