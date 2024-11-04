@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:06:23 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/31 22:34:25 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 10:22:05 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_word_counter(char *s, char c)
 	i = 0;
 	count = 0;
 	inside = 0;
-	while ( s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		if (s[i] != c && inside == 0)
 		{
@@ -39,15 +39,13 @@ char	**ft_split(const char *s, char c)
 {
 	size_t	i;
 	size_t	start;
-	size_t	word_counter;
 	size_t	index;
 	char	**result;
 
 	i = 0;
 	start = 0;
 	index = 0;
-	word_counter = ft_word_counter((char *)s, c);
-	result = ft_calloc((word_counter + 1), sizeof(char *));
+	result = ft_calloc((ft_word_counter((char *)s, c) + 1), sizeof(char *));
 	if (!result)
 		return (NULL);
 	while (s[i] != '\0')

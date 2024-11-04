@@ -6,12 +6,11 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 17:49:42 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/31 19:31:08 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 10:19:33 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 //escreve um int em um descritor de arquivo.
 void	ft_putnbr_fd(int n, int fd)

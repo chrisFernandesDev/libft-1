@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:09:09 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/31 10:47:29 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 10:35:31 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 int	main()
 {
 	char	*s1 = "      Ela disse que nao tinha personalidade juridica!     ";
-	char	*set = " ";
+	char	*set = "e al";
 	char	*result = ft_strtrim(s1, set);
 
 	printf	("%s\n", result);

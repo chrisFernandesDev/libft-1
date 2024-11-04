@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 17:35:18 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/31 17:41:50 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 10:19:01 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_putendl_fd(char *s, int fd)
 	write(fd, s, len);
 	write(fd, "\n", 1);
 }
-
+/* 
 int	main()
 {
 	char	*s = "ela disse que nao tinha personalidade juridica!";
@@ -29,4 +29,4 @@ int	main()
 
 	ft_putendl_fd(s, fd);
 	return (0);
-}
+} */
