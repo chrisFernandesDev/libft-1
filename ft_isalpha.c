@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+//Verifica se um caractere é alfabético.
 int	ft_isalpha(char c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))

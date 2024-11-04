@@ -6,7 +6,7 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 12:42:12 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/31 14:19:35 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 12:01:05 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	upper(unsigned int i, char c)
 	return (c);
 }
  */
+
+//Cria uma nova str aplicando uma função a cada caractere.
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	size_t	i;

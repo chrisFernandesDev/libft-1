@@ -6,13 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:34:46 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/30 13:49:32 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 11:58:04 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Concatena duas strings com o NULL incluido.
+//Concatena duas str's com um limitador no Buffer.
 size_t	ft_strlcat(char *dest, const char *src, size_t dest_size)
 {
 	size_t	src_len;

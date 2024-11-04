@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-// descobre se 'e digito.
+//Verifica se um caractere é um dígito.
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

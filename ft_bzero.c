@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-//estou a passar o void mas posso passar o ptr.
+//
 void	*ft_bzero(void *str, size_t n)
 {
 	unsigned char	*ptr;
@@ -25,7 +25,7 @@ void	*ft_bzero(void *str, size_t n)
 		ptr[i] = '\0';
 		i++;
 	}
-	return (str);
+	return (ptr);
 }
 /* 
 int main()

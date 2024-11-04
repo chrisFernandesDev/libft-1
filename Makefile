@@ -11,6 +11,8 @@ SRC	=  ft_bzero.c ft_isalnum.c ft_isalpha.c \
 	ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 	ft_split.c ft_memcpy.c
 
+SRC_BONUS = ft_lstnew.c
+
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
@@ -18,8 +20,14 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rcs -o $(NAME) $(OBJ)
 
+bonus: $(NAME): $(SRC_BONUS)
+	ar rcs -o $(NAME) $(SRC_BONUS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
 clean:
-		rm -f $(OBJ)
+		rm -f $(OBJ) $(SRC_BONUS)
 
 fclean: clean
 	rm -f $(NAME)

@@ -6,12 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:06:23 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/11/04 10:22:05 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 11:46:56 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//Contador de letras na palavra. 
 size_t	ft_word_counter(char *s, char c)
 {
 	size_t	i;
@@ -35,6 +36,7 @@ size_t	ft_word_counter(char *s, char c)
 	return (count);
 }
 
+//Divide uma str em uma array de str's c/base de char escolhido pelo utilizador.
 char	**ft_split(const char *s, char c)
 {
 	size_t	i;
@@ -63,7 +65,7 @@ char	**ft_split(const char *s, char c)
 		result[index++] = ft_substr(s, start, i - start);
 	return (result);
 }
-
+/* 
 int	main()
 {
 	char	*s = "ela disse que nao tenho personalidade juridica";
@@ -77,4 +79,4 @@ int	main()
 		i++;
 	}
 	return (0);
-}
+} */

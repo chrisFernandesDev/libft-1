@@ -6,12 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:49:50 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/31 14:25:10 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 12:21:58 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//Cria uma sub str a partir do start até ao limite desejado.
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	size_t	i;

@@ -6,13 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:32:01 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/31 14:24:12 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 12:12:09 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//procura a agulha dentro do palheiro ate um certo limite
+//Procura uma str dentro de outra e copia até um tamanho específico.
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;

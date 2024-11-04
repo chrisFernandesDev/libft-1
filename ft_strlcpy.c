@@ -6,13 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:04:33 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/11/04 10:35:20 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 11:59:48 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Copia uma string para outra com o \0 incluido mas so retorna o len de src.
+//Cópia uma str para outra com um limitador no Buffer.
 size_t	ft_strlcpy(char *dest, const char *src, size_t dest_size)
 {
 	size_t	src_len;

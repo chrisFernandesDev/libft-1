@@ -6,12 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 12:20:41 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/30 13:49:55 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 11:54:05 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//Junta uma str com outra.
 char	*ft_strcat(char *dest, const char *src)
 {
 	size_t	i;
@@ -29,6 +30,7 @@ char	*ft_strcat(char *dest, const char *src)
 	return (dest);
 }
 
+//Junta uma str com outra numa nova str.
 char	*ft_strjoin(const char *s1, const char *s2)
 {
 	char	*s3;

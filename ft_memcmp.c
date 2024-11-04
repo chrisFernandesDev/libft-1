@@ -6,13 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 13:50:39 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/30 11:46:24 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 11:36:19 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//compara 2 strings de bytes
+//Compara 2 strings de bytes.
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*c_s1;

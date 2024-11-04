@@ -6,13 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 17:23:28 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/30 11:44:30 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 12:13:34 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//funcao que procura a ultima character e retorna o pointer do resto
+//Procura a última chr e retorna o pointer do resto.
 char	*ft_strrchr(const char *str, int c)
 {
 	char	*last_c;

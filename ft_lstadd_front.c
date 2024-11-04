@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/31 17:49:42 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/11/04 11:42:51 by tiagalex         ###   ########.fr       */
+/*   Created: 2024/11/04 17:52:36 by tiagalex          #+#    #+#             */
+/*   Updated: 2024/11/04 19:57:41 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Escreve um int em um descritor de arquivo.
-void	ft_putnbr_fd(int n, int fd)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	char	*str;
-	size_t	len;
-
-	str = ft_itoa(n);
-	len = ft_strlen(str);
-	write(fd, str, len);
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
 /* 
-int	main()
+int main()
 {
-	int	n = 324;
-	int	fd = 1;
+	t_list *lst = ft_lstnew("banana");
 
-	ft_putnbr_fd(n, fd);
-	return (0);
-}*/
+	ft_lstadd_front(&lst, ft_lstnew("uva"));
+	while (lst)
+	{
+		printf("%s", (char *)lst->content);
+		lst = lst->next;
+	}
+} */

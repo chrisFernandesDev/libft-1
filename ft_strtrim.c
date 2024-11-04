@@ -6,13 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:09:09 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/11/04 10:35:31 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 12:18:45 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Remove caracteres de `set` do início e fim de `s1`
+//Remove todos chr’s do início e fim da str e retorna uma str limpa.
 char	*ft_strtrim(const char *s1, const char *set)
 {
 	size_t	start;

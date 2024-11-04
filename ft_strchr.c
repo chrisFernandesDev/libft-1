@@ -6,13 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 15:42:39 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/23 18:13:34 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 11:48:07 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// a funcao procura na string o char queres e recebes o pointer do resto
+//Procura na str o char que queres e recebes o pointer do resto.
 char	*ft_strchr(const char *str, int c)
 {
 	while (*str)

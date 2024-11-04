@@ -6,12 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 12:25:43 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/30 11:50:18 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 11:50:27 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//Cria uma cópia da str.
 char	*ft_strdup(const char *str)
 {
 	char	*cpy;

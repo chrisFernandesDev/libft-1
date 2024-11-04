@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-//estou a passar o void mas posso passar o ptr.
+//Preenche uma str c/ um valor especifico.
 void	*ft_memset(void *str, int value, size_t n)
 {
 	unsigned char	*ptr;

@@ -6,13 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 10:52:46 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/24 11:36:01 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/04 12:08:59 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//compara com entre 2 strings
+//Compara duas string até um tamanho específico.
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
