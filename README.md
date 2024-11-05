@@ -77,7 +77,7 @@ To use the library, simply include the header `libft.h` and compile with `libft.
 
 # libft
 
-Libft é o meu 1st Projecto do curso da 42. O projeto requer recriar algumas funções da biblioteca padrão do C e criar algumas funções auxiliares.
+Libft é o meu primeiro Projeto da 42. O projeto requer recriar algumas funções da biblioteca padrão do C e criar algumas funções auxiliares.
 
 
 ## Sumário

@@ -6,12 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:56:55 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/29 17:40:28 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/05 10:24:21 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//Converte uma str em um int.
 int	ft_atoi(char *str)
 {
 	int	i;

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-//Preenche uma str c/ um valor especifico.
+//Preenche uma str c/ um valor específico.
 void	*ft_memset(void *str, int value, size_t n)
 {
 	unsigned char	*ptr;

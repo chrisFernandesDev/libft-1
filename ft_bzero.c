@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-//
+//Preenche uma área de memória com '\0'.
 void	*ft_bzero(void *str, size_t n)
 {
 	unsigned char	*ptr;

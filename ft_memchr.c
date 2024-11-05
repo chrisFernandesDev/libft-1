@@ -6,13 +6,13 @@
 /*   By: tiagalex <tiagalex@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 11:43:35 by tiagalex          #+#    #+#             */
-/*   Updated: 2024/10/30 11:45:10 by tiagalex         ###   ########.fr       */
+/*   Updated: 2024/11/05 12:12:31 by tiagalex         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//procura o character numa string de bytes
+//procura o character numa string de bytes.
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*str;

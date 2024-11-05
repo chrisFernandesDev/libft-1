@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-//copia um bloco de memoria
+//Copia um bloco de memoria.
 void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
 	unsigned char	*c_src;
